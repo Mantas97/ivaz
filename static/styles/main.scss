@@ -1,0 +1,35 @@
+$primary-color: #2699FB;
+$secondary-color: #BCE0FD;
+
+
+html, body{
+    overflow: hidden !important;
+    
+    section{
+        height: 100vh;
+    }
+}
+
+a{
+    display: contents;
+}
+
+
+
+// submit button bottom
+.i-button-container{
+    height: 15vh;
+}
+.i-button-container .row{
+    height: 100%;
+}
+.i-button-submit{
+    background-color: $primary-color;
+    line-height: 2;
+    border-radius: 1.5rem;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-color: white;
+}

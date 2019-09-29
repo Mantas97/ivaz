@@ -30,13 +30,14 @@ module.exports = {
   css: [
     '../node_modules/material-design-icons/iconfont/material-icons.css',
     '@/static/fonts/Roboto/Roboto_font.css',
-    '@/static/styles/main.scss'
+    '@/static/styles/main.scss',
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+
   ],
 
   /*
