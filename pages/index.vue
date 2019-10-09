@@ -1,79 +1,101 @@
 <template>
-  <section class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        ivaz-project
-      </h1>
-      <h2 class="subtitle">
-        ivaz project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
-        <i class="material-icons white-text">error_outline</i>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >GitHub</a>
-      </div>
-    </div>
-  </section>
+<section>
+
+    <b-container fluid class="i-start-title ">
+        <b-row align-v="end" class="justify-content-center">
+            <h4>Instrukcijos</h4>
+        </b-row>
+    </b-container>
+
+
+    <b-container fluid class="i-start-content">
+        <h5>Image</h5>
+    </b-container>
+
+
+
+    <b-container fluid class="i-start-text">
+        <b-row align-v="start" class="justify-content-center">
+            <div class="i-start-textdiv">
+                <h5>Main Title</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+        </b-row>
+    </b-container>
+
+    <b-container fluid class="i-button-container">
+        <b-row align-v="start" class="justify-content-center">
+            <nuxt-link to="#" >
+                <b-button class="i-button-submit">Pradėti</b-button>
+            </nuxt-link>
+        </b-row>
+    </b-container>
+
+
+</section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+  layout: 'scroll'
 }
 </script>
 
-<style lang="scss">
 
-$font-stack: 'RobotoBold';
-$primary-color: rgb(224, 0, 0);
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color !important;
+
+<style lang="scss" scoped>
+
+$primary-color: #2699FB;
+
+html, body{
+  overflow: auto !important;
+  
+  section{
+    height: auto;
+  }
 }
 
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+
+.i-start-title{
+    height: 15vh;
+
+    h4{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+.i-start-title .row, .i-start-text .row{
+    height: 100%;
+}
+h4, h5, p{
+    color: $primary-color;
 }
 
-.title {
-  // font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-  //   'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: $primary-color;
-  font-family: $font-stack;
-  letter-spacing: 1px;
+
+.i-start-content{
+    background-color: $primary-color;
+    height: 50vh;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+
+.i-start-text{
+    height: 20vh;
+
+    .i-start-textdiv{
+        width: 90%;
+        text-align: center;
+        padding-top: 1rem; 
+    }
+
+    .i-start-text h5{
+        font-weight: 700;
+    }
 }
 
-.links {
-  padding-top: 15px;
-}
+
+
+
 </style>

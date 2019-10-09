@@ -3,7 +3,7 @@
 
     <b-container fluid class="i-start-title ">
         <b-row align-v="end" class="justify-content-center">
-            <h4 >Instrukcijos</h4>
+            <h4>Instrukcijos</h4>
         </b-row>
     </b-container>
 

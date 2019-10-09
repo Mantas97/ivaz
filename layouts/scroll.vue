@@ -1,14 +1,11 @@
 <template>
   <div>
-    <nuxt />
+    <nuxt/>
   </div>
 </template>
 
 <style>
 html, body{
-  overflow: hidden;
-}
-html body section{
-  height: 100vh;
+  overflow: auto;
 }
 </style>
